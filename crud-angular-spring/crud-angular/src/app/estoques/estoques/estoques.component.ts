@@ -9,10 +9,12 @@ import {Estoque} from "../model/estoque";
 })
 export class EstoquesComponent implements OnInit {
 
-  estoques: Estoque[] = [];
+  estoques: Estoque[] = [
+    {_id: 1, nome: 'Heineken', categoria: 'Cerveja'}
+  ];
+  displayedColumns = ['nome', 'categoria'];
 
   constructor() {
-    this.estoques = [];
   }
 
   ngOnInit(): void {
