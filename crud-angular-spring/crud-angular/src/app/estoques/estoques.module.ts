@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { EstoquesRoutingModule } from './estoques-routing.module';
-import { EstoquesComponent } from './estoques/estoques.component';
+import {EstoquesRoutingModule} from './estoques-routing.module';
+import {EstoquesComponent} from './estoques/estoques.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { EstoquesComponent } from './estoques/estoques.component';
   ],
   imports: [
     CommonModule,
-    EstoquesRoutingModule
+    EstoquesRoutingModule,
+    MatTableModule
   ]
 })
 export class EstoquesModule { }

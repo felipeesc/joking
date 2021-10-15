@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Estoque} from "../model/estoque";
+
 
 @Component({
   selector: 'app-estoques',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EstoquesComponent implements OnInit {
 
-  constructor() { }
+  estoques: Estoque[] = [];
+
+  constructor() {
+    this.estoques = [];
+  }
 
   ngOnInit(): void {
   }
