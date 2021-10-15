@@ -19,4 +19,5 @@ import {MatTableModule} from '@angular/material/table';
     MatTableModule
   ]
 })
-export class EstoquesModule { }
+export class EstoquesModule {
+}
