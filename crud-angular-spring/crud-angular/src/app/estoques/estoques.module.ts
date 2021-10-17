@@ -3,20 +3,19 @@ import {CommonModule} from '@angular/common';
 
 import {EstoquesRoutingModule} from './estoques-routing.module';
 import {EstoquesComponent} from './estoques/estoques.component';
-import {MatTableModule} from '@angular/material/table';
+import { SharedModule } from './../shared/shared.module';
+import {AppMaterialModule} from "../shared/app-material/app-material.module";
 
 
 @NgModule({
   declarations: [
     EstoquesComponent
   ],
-  exports: [
-    EstoquesComponent
-  ],
   imports: [
     CommonModule,
     EstoquesRoutingModule,
-    MatTableModule
+    AppMaterialModule,
+    SharedModule
   ]
 })
 export class EstoquesModule {
