@@ -19,9 +19,9 @@ export class EstoquesComponent implements OnInit {
   estoques$: Observable<Estoque[]>;
 
   estoques: Estoque[] = [
-    {_id: 1, nome: 'Heineken', categoria: 'Cerveja'}
+    {_id: 1, nome: 'Heineken', categoria: 'Cerveja', fornecedor: 'ambev', acoes: ''}
   ];
-  displayedColumns = ['nome', 'categoria'];
+  displayedColumns = ['nome', 'categoria', 'fornecedor', 'getdetails'];
 
   constructor(
     private estoqueService: EstoqueService,
@@ -42,8 +42,13 @@ export class EstoquesComponent implements OnInit {
     });
   }
 
+  getRecord(name: string)
+  {
+    alert(name);
+  }
 
   ngOnInit(): void {
+
   }
 
 }
